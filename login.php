@@ -22,6 +22,14 @@
                     if(isset($_GET['error'])){
                         echo("<p class='text-danger'>". $_GET['error'] ."</p>");
                     }
+                    else if(isset($_GET['signup']) && $_GET['signup'] === '\'success\''){
+                        echo("
+                            <div class='alert alert-success'>
+                                <strong>Signup Successful!</strong> Now you can login to your Account
+                            </div>
+                            
+                        ");
+                    }
                 ?>
 
                 <div class="form-group mb-4">

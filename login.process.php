@@ -43,6 +43,7 @@
                 $user = mysqli_fetch_assoc($result);
                 session_start();
                 $_SESSION['user_email'] = $user['user_email']; 
+                $_SESSION['user_id'] = $user['id'];
                 header("Location: account.php?signup='success'");
             }else{
                 header("Location: login.php?error='Email or Password did not matched!'");

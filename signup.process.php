@@ -53,11 +53,12 @@
                     header("Location: signup.php?error='Server Error Occured! Your Account is not created'");
                 }
 
-                session_start();
+                // session_start();
 
-                $_SESSION['user_email'] = $email; 
+                // $_SESSION['user_email'] = $email;  
+                // $_SESSION['user_id'] = $user['id'];
 
-                header("Location: account.php?signup='success'");
+                header("Location: login.php?signup='success'");
             }
         }
     }else{
